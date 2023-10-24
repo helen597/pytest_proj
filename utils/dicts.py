@@ -7,4 +7,7 @@ def get_val(collection, key, default='git'):
     :param default: значение по умолчанию
     :return: значение по ключу
     """
-    return collection[key]
+    if collection:
+        return collection[key]
+    else:
+        return default
